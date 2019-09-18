@@ -1,10 +1,11 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and fast dashboard skeleton on Bootstrap 4",
   "main": "Gruntfile.js",
   "dependencies": {
     "sidebar-menu-compostrap": "^1.0.7",
+    "sidebar-menu-2-compostrap": "^1.0.3",
     "user-logged-compostrap": "^1.0.2"
   },
   "devDependencies": {

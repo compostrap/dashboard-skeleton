@@ -16,4 +16,6 @@
 @import '../node_modules/sidebar-menu-compostrap/scss/utils/_variables';
 
 // dashboard skeleton
+@import 'components/_nanobar';
+@import 'components/_text';
 @import 'layout/_content';

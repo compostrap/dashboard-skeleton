@@ -1,0 +1,26 @@
+//
+// text component
+//
+
+.text {
+
+  &-purple {
+    color: $purple;
+  }
+
+  &-pink {
+    color: $pink;
+  }
+
+  &-orange {
+    color: $orange;
+  }
+
+  &-teal {
+    color: $teal;
+  }
+}
+
+.text-bolder {
+  font-weight: 600;
+}

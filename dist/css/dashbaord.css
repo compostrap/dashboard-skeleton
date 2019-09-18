@@ -4,6 +4,27 @@
  * Copyright Zdeněk Papučík
  * MIT License
 */
+.nanobar .bar {
+  background-color: #d2d2d2;
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+.text-pink {
+  color: #e83e8c;
+}
+.text-orange {
+  color: #fd7e14;
+}
+.text-teal {
+  color: #20c997;
+}
+
+.text-bolder {
+  font-weight: 600;
+}
+
 .content-box {
   padding: 1.25rem;
   font-size: 0.875rem;
