@@ -1,0 +1,29 @@
+{
+  "name": "dashboard-skeleton-compostrap",
+  "version": "1.0.0",
+  "description": "Simple and fast dashboard skeleton on Bootstrap 4",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "sidebar-menu-compostrap": "^1.0.7",
+    "user-logged-compostrap": "^1.0.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-sass": "^1.0.0"
+  },
+  "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "dashboard",
+    "admin",
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compostrap/dashboard-skeleton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/compostrap/dashboard-skeleton/issues"
+  },
+  "homepage": "https://github.com/compostrap/dashboard-skeleton#readme"
+}

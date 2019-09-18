@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*!
+ * Dashboard skeleton
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+.content-box {
+  padding: 1.25rem;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+}
+
+/*# sourceMappingURL=dashbaord.css.map */

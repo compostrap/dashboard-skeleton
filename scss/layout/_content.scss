@@ -1,0 +1,9 @@
+//
+// dashboard content layout
+//
+
+.content-box {
+  padding: rem(20);
+  @include font-size($font-size);
+  @include border-radius($border-radius);
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AACA;;;;EAIE;ACDF,YAAa;EACX,OAAO,ECDC,OAAwB;EC2H5B,SAAS,EAtCI,QAAwC;ECpFvD,aAAa,ECqOa,OAAM",
+"sources": ["../../scss/dashboard.scss","../../scss/layout/_content.scss","../../node_modules/sidebar-skeleton-compostrap/scss/utils/_functions.scss","../../node_modules/bootstrap/scss/vendor/_rfs.scss","../../node_modules/bootstrap/scss/mixins/_border-radius.scss","../../node_modules/bootstrap/scss/_variables.scss"],
+"names": [],
+"file": "dashbaord.css"
+}

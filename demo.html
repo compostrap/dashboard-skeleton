@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css">
+	<link rel="stylesheet" href="node_modules/open-sans-fontface/open-sans.css">
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+	<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css">
+	<link rel="stylesheet" href="node_modules/user-logged-compostrap/dist/css/user.logged.css">
+	<link rel="stylesheet" href="dist/css/dashbaord.css">
+	<title>Dashboard</title>
+</head>
+
+<body class="bg-light">
+
+<header>
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+
+		<!-- title -->
+		<a class="navbar-brand" href="#">Dashboard</a>
+
+		<!-- sidebar toggle -->
+		<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- user panel -->
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+
+				<!-- username and avatar -->
+				<li class="nav-item nav-item-user"><span class="navbar-text mr-2">Accgit</span></li>
+				<li class="nav-item nav-item-avatar"><img src="node_modules/user-logged-compostrap/dist/img/avatar.png" width="34" alt="avatar"></li>
+
+				<!-- dropdown menu -->
+				<li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">
+					<i class="fas fa-angle-down"></i>
+				</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-menu-bg-dark border-0">
+						<div class="dropdown-menu-arrow"></div>
+						<a class="dropdown-item" href="#">Profile</a>
+						<a class="dropdown-item" href="#">Change password</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Private messages</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Sign out</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
+	<nav role="navigation" class="sidebar sidebar-bg-white" id="navigation">
+
+		<!-- sidebar -->
+		<div class="sidebar-menu sidebar-rounded-top-right">
+
+			<!--  menu fixed -->
+			<div class="sidebar-menu-fixed">
+
+				<!-- menu scrollbar -->
+				<div class="scrollbar scrollbar-bg-white">
+
+					<!-- menu -->
+					<ul class="list list-unstyled list-bg-white list-bg-menu-purple mb-0">
+
+						<!-- simple menu -->
+						<li class="list-item">
+
+							<!-- list title -->
+							<p class="list-title text-uppercase">Translate</p>
+
+							<!-- list items -->
+							<ul class="list-unstyled">
+								<li><a href="#" class="list-link">Czech</a></li>
+								<li><a href="#" class="list-link link-current">English</a></li>
+							</ul>
+						</li>
+
+						<!-- multi-level dropdown menu -->
+						<li class="list-item">
+
+							<!-- list title -->
+							<p class="list-title text-uppercase">Dashboard</p>
+
+							<!-- list items, first level -->
+							<ul class="list-unstyled">
+								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-home"></i></span>Home</a></li>
+								<li><a href="#" class="list-link link-arrow link-current"><span class="list-icon"><i class="fas fa-tools"></i></span>Settings</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">Timezone</a></li>
+										<li><a href="#" class="list-link link-current">Permissions</a></li>
+										<li><a href="#" class="list-link link-arrow">Maintenance</a>
+
+											<!-- list items, third level -->
+											<ul class="list-unstyled list-hidden">
+												<li><a href="#" class="list-link">On</a></li>
+												<li><a href="#" class="list-link">Off</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<!-- notice info -->
+								<li>
+									<a href="#" class="list-link">
+										<div class="clearfix">
+											<div class="float-left"><span class="list-icon"><i class="fas fa-bell"></i></span>Notice</div>
+											<div class="float-right">
+												<span class="badge badge-info">New</span>
+												<span class="badge badge-secondary">4</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- simple menu -->
+						<li class="list-item">
+
+							<!-- list title -->
+							<p class="list-title text-uppercase">Blog</p>
+
+							<!-- list items -->
+							<ul class="list-unstyled">
+								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>Add</a></li>
+								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-table"></i></span>List</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- menu -->
+					<ul class="list list-unstyled list-bg-white list-bg-menu-pink mb-0">
+
+						<!-- multi-level dropdown menu -->
+						<li class="list-item">
+
+						<!-- multi-level dropdown menu -->
+						<li class="list-item">
+
+							<!-- list title -->
+							<p class="list-title text-uppercase">Coments</p>
+
+							<!-- list items, first level -->
+							<ul class="list-unstyled">
+								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>New</a></li>
+								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-comment"></i></span>Settings comments</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">Disable</a></li>
+										<li><a href="#" class="list-link">Enable</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+
+		<!-- content -->
+		<main role="main">
+
+			<!-- full box -->
+			<div class="content-box mb-3 bg-white">
+				<h3>Full conent</h3>
+				<p>Here is content this website page.</p>
+			</div>
+
+			<!-- grid -->
+			<div class="row">
+
+				<!-- six box -->
+				<div class="col-sm-6 mb-3 col-md-6">
+					<div class="content-box bg-white">
+						<h3>50% content</h3>
+						<p>Here is content this website page.</p>
+					</div>
+				</div>
+
+				<!-- six box -->
+				<div class="col-sm-6 mb-3 col-md-6">
+					<div class="content-box bg-white">
+						<h3>50% content</h3>
+						<p>Here is content this website page.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+<!-- javascript library -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.js"></script>
+<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+<script src="node_modules/nanobar/nanobar.js"></script>
+<script src="node_modules/sidebar-menu-compostrap/dist/js/sidebar.menu.js"></script>
+<script>
+	$(function() {
+		new Nanobar().go(100);
+		new PerfectScrollbar('.scrollbar');
+	});
+</script>
+
+</body>
+</html>
