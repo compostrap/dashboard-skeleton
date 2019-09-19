@@ -1,6 +1,6 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple and fast dashboard skeleton on Bootstrap 4",
   "main": "Gruntfile.js",
   "dependencies": {
