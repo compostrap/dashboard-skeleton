@@ -5,7 +5,7 @@
 <h3 align="center">Compostrap</h3>
 <p align="center">Simple and fast components build on Bootstrap 4</p>
 
-## Info
+## Dashboard skeleton
 Simple and fast dashboard skeleton template.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/compostrap/dashboard-skeleton/master/license.md)
@@ -26,8 +26,31 @@ npm install --save dashboard-skeleton-compostrap
 - [Open Sans @font-face kit](https://github.com/FontFaceKit/open-sans)
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
-## View demo
-- https://compostrap.github.io/dashboard.skeleton
+## Demo
+https://compostrap.github.io/dashboard.skeleton
 
-## Documentation
-- https://github.com/compostrap/dashboard-skeleton/wiki/Getting-started
+## Introduction
+Simple and fast dashbaord skeleton is build on Bootstrap. So you should be aware of how Bootstrap itself is used.
+The advantage is also knowledge of sass, npm, grunt.
+
+## Dashboard skeleton
+The basic skeleton consists of these components.
+
+- [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton)
+- [Sidebar menu](https://github.com/compostrap/sidebar-menu-2)
+- [User logged](https://github.com/compostrap/user-logged)
+
+## Dashboard extension
+Added some classes for text.
+
+| Color                                                               | Class         |
+| ------------------------------------------------------------------- | ------------- |
+| ![#6f42c1](https://placehold.it/15/6f42c1/000000?text=+) `#6f42c1`  | `text-purple` |
+| ![#e83e8c](https://placehold.it/15/e83e8c/000000?text=+) `#e83e8c`  | `text-pink`   |
+| ![#fd7e14](https://placehold.it/15/fd7e14/000000?text=+) `#fd7e14`  | `text-orange` |
+| ![#20c997](https://placehold.it/15/20c997/000000?text=+) `#20c997`  | `text-teal`   |
+
+| Description | class          |
+| ----------- | -------------- |
+| Fatty text  | ``text-bolder` |
+
