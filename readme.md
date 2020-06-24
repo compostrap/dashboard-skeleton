@@ -52,5 +52,5 @@ Added some classes for text.
 
 | Description | class          |
 | ----------- | -------------- |
-| Fatty text  | ``text-bolder` |
+| Fatty text  | `text-bolder` |
 
