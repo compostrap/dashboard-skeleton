@@ -37,8 +37,7 @@ The advantage is also knowledge of sass, npm, grunt.
 The basic skeleton consists of these components.
 
 - [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton)
-- [Sidebar menu](https://github.com/compostrap/sidebar-menu-2)
-- [User logged](https://github.com/compostrap/user-logged)
+- [Sidebar menu](https://github.com/compostrap/sidebar-menu)
 
 ## Dashboard extension
 Added some classes for text.
