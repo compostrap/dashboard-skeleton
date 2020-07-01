@@ -28,6 +28,19 @@
   font-weight: 600;
 }
 
+.navbar-nav-breadcrumb .nav-link {
+  margin-left: 1.25rem;
+}
+.navbar-nav-breadcrumb li + li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f715";
+  position: absolute;
+  top: 1.25rem;
+  font-size: 0.75rem;
+  opacity: 0.2;
+}
+
 .content-box {
   padding: 1.25rem;
   font-size: 0.875rem;

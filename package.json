@@ -4,12 +4,12 @@
   "description": "Simple and fast dashboard skeleton on Bootstrap 4",
   "main": "Gruntfile.js",
   "dependencies": {
-    "sidebar-menu-2-compostrap": "^1.0.4",
-    "sidebar-menu-compostrap": "^1.0.8",
+    "sidebar-menu-2-compostrap": "^1.0.13",
+    "sidebar-menu-compostrap": "^1.0.17",
     "user-logged-compostrap": "^1.0.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "grunt": "^1.1.0",
     "grunt-contrib-sass": "^1.0.0"
   },
   "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",

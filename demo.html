@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="node_modules/open-sans-fontface/open-sans.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 	<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-	<link rel="stylesheet" href="node_modules/sidebar-menu-2-compostrap/dist/css/sidebar.menu.css">
+	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css">
 	<link rel="stylesheet" href="node_modules/user-logged-compostrap/dist/css/user.logged.css">
 	<link rel="stylesheet" href="dist/css/dashbaord.css">
 	<title>Dashboard</title>
@@ -22,7 +22,7 @@
 	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 
 		<!-- title -->
-		<a class="navbar-brand" href="#"><i class="fab fa-bootstrap mr-1 text-purple"></i>
+		<a class="navbar-brand" href="#"><i class="fas fa-mug-hot mr-1 text-purple"></i>
 			<span class="text-purple text-bolder">Dashboard</span>
 		</a>
 
@@ -31,76 +31,70 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<!-- user panel -->
+		<!-- navbar navigation -->
 		<div class="collapse navbar-collapse">
-			<ul class="navbar-nav ml-auto">
 
-				<!-- username and avatar -->
-				<li class="nav-item nav-item-user"><span class="navbar-text mr-2">Accgit</span></li>
-				<li class="nav-item nav-item-avatar"><img src="node_modules/user-logged-compostrap/dist/img/avatar.png" width="34" alt="avatar"></li>
-
-				<!-- dropdown menu -->
-				<li class="nav-item dropdown"><a class="nav-link" href="#" data-toggle="dropdown">
-					<i class="fas fa-angle-down"></i>
-				</a>
-					<div class="dropdown-menu dropdown-menu-right dropdown-menu-bg-purple border-0">
-						<div class="dropdown-menu-arrow"></div>
-						<a class="dropdown-item" href="#">Profile</a>
-						<a class="dropdown-item" href="#">Change password</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Private messages</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Sign out</a>
-					</div>
-				</li>
+			<!-- list items -->
+			<ul class="navbar-nav navbar-nav-breadcrumb">
+				<li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+				<li class="nav-item"><a class="nav-link disabled" href="#">Translate</a></li>
 			</ul>
 		</div>
 	</nav>
 </header>
 
 <div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
-	<nav role="navigation" class="sidebar sidebar-bg-white" id="navigation">
+	<nav role="navigation" class="sidebar sidebar-bg-white sidebar-rounded-top-right shadow-box" id="navigation">
 
 		<!-- sidebar -->
-		<div class="sidebar-menu sidebar-rounded-top-right">
+		<div class="sidebar-menu">
 
-			<!--  menu fixed -->
+			<!-- menu fixed -->
 			<div class="sidebar-menu-fixed">
 
 				<!-- menu scrollbar -->
-				<div class="scrollbar scrollbar-bg-light">
+				<div class="scrollbar scrollbar-bg-white">
 
 					<!-- menu -->
-					<ul class="list list-unstyled list-bg-light list-bg-menu-purple mb-0">
+					<ul class="list list-unstyled list-bg-white mb-0">
 
-						<!-- simple menu -->
 						<li class="list-item">
 
 							<!-- list title -->
-							<p class="list-title text-uppercase">Translate</p>
+							<p class="list-title text-uppercase">User logged</p>
 
-							<!-- list items -->
+							<!-- list items, first level -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link">Czech</a></li>
-								<li><a href="#" class="list-link link-current">English</a></li>
+								<li><a href="#" class="list-link link-arrow text-uppercase"><span class="list-icon"><i class="far fa-user"></i></span>S. Karlos</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">Your profil</a></li>
+										<li><a href="#" class="list-link">Logout</a></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
+					</ul>
+
+					<!-- menu -->
+					<ul class="list list-unstyled list-bg-white list-icon-purple mb-0">
 
 						<!-- multi-level dropdown menu -->
 						<li class="list-item">
 
 							<!-- list title -->
-							<p class="list-title text-uppercase">Dashboard</p>
+							<p class="list-title text-uppercase">System</p>
 
-							<!-- list items, first level -->
+							<!-- list items -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-home"></i></span>Home</a></li>
-								<li><a href="#" class="list-link link-arrow link-current"><span class="list-icon"><i class="fas fa-tools"></i></span>Settings</a>
+								<li><a href="#" class="list-link link-current"><span class="list-icon"><i class="fas fa-mug-hot"></i></span>Dashboard</a></li>
+								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-hammer"></i></span>Settings</a>
 
 									<!-- list items, second level -->
 									<ul class="list-unstyled list-hidden">
-										<li><a href="#" class="list-link">Timezone</a></li>
-										<li><a href="#" class="list-link link-current">Permissions</a></li>
+										<li><a href="#" class="list-link">Permissions</a></li>
 										<li><a href="#" class="list-link link-arrow">Maintenance</a>
 
 											<!-- list items, third level -->
@@ -112,13 +106,62 @@
 									</ul>
 								</li>
 
-								<!-- notice info -->
+								<!-- comments -->
+								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="far fa-comment"></i></span>Comments</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">Disable</a></li>
+										<li><a href="#" class="list-link">Enable</a></li>
+									</ul>
+								</li>
+
+								<!-- translate -->
+								<li><a href="#" class="list-link link-arrow link-current"><span class="list-icon"><i class="fas fa-globe"></i></span>Translate</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">Czech</a></li>
+										<li><a href="#" class="list-link link-current">English</a></li>
+										<li><a href="#" class="list-link">Germany</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- multi-level dropdown menu -->
+						<li class="list-item">
+
+							<!-- list title -->
+							<p class="list-title text-uppercase">Eshop</p>
+
+							<!-- list items -->
+							<ul class="list-unstyled">
+								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-shopping-basket"></i></span>Orders</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">New</a></li>
+										<li><a href="#" class="list-link">Finished</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- simple menu -->
+						<li class="list-item">
+
+							<!-- list title -->
+							<p class="list-title text-uppercase">Notice</p>
+
+							<!-- list items -->
+							<ul class="list-unstyled">
 								<li>
 									<a href="#" class="list-link">
 										<div class="clearfix">
-											<div class="float-left"><span class="list-icon"><i class="fas fa-bell"></i></span>Notice</div>
+											<div class="float-left"><span class="list-icon"><i class="far fa-bell"></i></span>Messages</div>
 											<div class="float-right">
-												<span class="badge badge-info">New</span>
+												<span class="badge badge-dark">New</span>
 												<span class="badge badge-secondary">4</span>
 											</div>
 										</div>
@@ -135,35 +178,8 @@
 
 							<!-- list items -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>Add</a></li>
-								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-table"></i></span>List</a></li>
-							</ul>
-						</li>
-					</ul>
-
-					<!-- menu -->
-					<ul class="list list-unstyled list-bg-light list-bg-menu-pink mb-0">
-
-						<!-- multi-level dropdown menu -->
-						<li class="list-item">
-
-						<!-- multi-level dropdown menu -->
-						<li class="list-item">
-
-							<!-- list title -->
-							<p class="list-title text-uppercase">Coments</p>
-
-							<!-- list items, first level -->
-							<ul class="list-unstyled">
-								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>New</a></li>
-								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-comment"></i></span>Settings comments</a>
-
-									<!-- list items, second level -->
-									<ul class="list-unstyled list-hidden">
-										<li><a href="#" class="list-link">Disable</a></li>
-										<li><a href="#" class="list-link">Enable</a></li>
-									</ul>
-								</li>
+								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>Add post</a></li>
+								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-table"></i></span>Category</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -178,7 +194,7 @@
 		<main role="main">
 
 			<!-- full box -->
-			<div class="content-box mb-3 bg-white">
+			<div class="content-box mb-3 bg-white shadow-sm">
 				<h3>Full conent</h3>
 				<p>Here is content this website page.</p>
 			</div>
@@ -188,7 +204,7 @@
 
 				<!-- six box -->
 				<div class="mb-3 col-xl-6">
-					<div class="content-box bg-white">
+					<div class="content-box bg-white shadow-sm">
 						<h3>50% content</h3>
 						<p>Here is content this website page.</p>
 					</div>
@@ -196,7 +212,7 @@
 
 				<!-- six box -->
 				<div class="mb-3 col-xl-6">
-					<div class="content-box bg-white">
+					<div class="content-box bg-white shadow-sm">
 						<h3>50% content</h3>
 						<p>Here is content this website page.</p>
 					</div>

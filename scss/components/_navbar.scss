@@ -1,0 +1,19 @@
+//
+// navbar component
+//
+
+.navbar-nav-breadcrumb {
+  .nav-link {
+    margin-left: rem(20);
+  }
+
+  li+li:before {
+    font-family: $font-awesome;
+    font-weight: 900;
+    content: "\f715";
+    position: absolute;
+    top: rem(20);
+    @include font-size($font-size-sm);
+    opacity: 0.2;
+  }
+}
