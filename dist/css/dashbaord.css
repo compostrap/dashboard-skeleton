@@ -43,8 +43,10 @@
 
 .content-box {
   padding: 1.25rem;
-  font-size: 0.875rem;
   border-radius: 0.25rem;
+}
+.content-box .content-font-size {
+  font-size: 0.875rem;
 }
 
 /*# sourceMappingURL=dashbaord.css.map */
