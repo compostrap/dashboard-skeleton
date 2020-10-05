@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 	<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
 	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css">
-	<link rel="stylesheet" href="node_modules/user-logged-compostrap/dist/css/user.logged.css">
 	<link rel="stylesheet" href="dist/css/dashbaord.css">
 	<title>Dashboard</title>
 
@@ -45,7 +44,7 @@
 </header>
 
 <div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
-	<nav role="navigation" class="sidebar sidebar-bg-white sidebar-rounded-top-right shadow-box" id="navigation">
+	<nav role="navigation" class="sidebar sidebar-bg-white sidebar-rounded-top-right shadow-sm" id="navigation">
 
 		<!-- sidebar -->
 		<div class="sidebar-menu">
@@ -54,7 +53,7 @@
 			<div class="sidebar-menu-fixed">
 
 				<!-- menu scrollbar -->
-				<div class="scrollbar scrollbar-bg-white">
+				<div class="scrollbar scrollbar-use-navbar scrollbar-bg-white">
 
 					<!-- menu -->
 					<ul class="list list-unstyled list-bg-white mb-0">
@@ -239,7 +238,9 @@
 <script>
 	$(function() {
 		new Nanobar().go(100);
-		new PerfectScrollbar('.scrollbar');
+		new PerfectScrollbar('.scrollbar', {
+			wheelSpeed: 0.3
+		});
 	});
 </script>
 
