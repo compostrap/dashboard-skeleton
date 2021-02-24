@@ -11,15 +11,19 @@
 .text-silver {
   color: #adb5bd;
 }
+
 .text-purple {
   color: #6f42c1;
 }
+
 .text-pink {
   color: #e83e8c;
 }
+
 .text-orange {
   color: #fd7e14;
 }
+
 .text-teal {
   color: #20c997;
 }
@@ -31,6 +35,7 @@
 .navbar-nav-breadcrumb .nav-link {
   margin-left: 1.25rem;
 }
+
 .navbar-nav-breadcrumb li + li:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -45,8 +50,9 @@
   padding: 1.25rem;
   border-radius: 0.25rem;
 }
+
 .content-box .content-font-size {
   font-size: 0.875rem;
 }
 
-/*# sourceMappingURL=dashbaord.css.map */
+/*# sourceMappingURL=dashboard.css.map */

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AACA;;;;EAIE;ACCA,aAAO;EACL,gBAAgB,EAAE,OAAO;;;ACD3B,YAAS;EACP,KAAK,ECgnBoC,OAAS;;AD7mBpD,YAAS;EACP,KAAK,EC2BC,OAAO;;ADxBf,UAAO;EACL,KAAK,EColC2B,OAAK;;ADjlCvC,YAAS;EACP,KAAK,ECsBC,OAAO;;ADnBf,UAAO;EACL,KAAK,ECqBC,OAAO;;;ADjBjB,YAAa;EACX,WAAW,EAAE,GAAG;;;AEvBhB,gCAAU;EACR,WAAW,ECFL,OAAwB;;ADKhC,qCAAa;EACX,WAAW,EERA,qBAAsB;EFSjC,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,OAAO;EAChB,QAAQ,EAAE,QAAQ;EAClB,GAAG,ECVG,OAAwB;EE2H5B,SAAS,EAtCI,OAAwC;EHzEvD,OAAO,EAAE,GAAG;;;AIZhB,YAAa;EACX,OAAO,EHDC,OAAwB;EIc9B,aAAa,EAVF,OAA+B;;ADA5C,+BAAmB;EDuHf,SAAS,EAtCI,QAAwC",
-"sources": ["../../scss/dashboard.scss","../../scss/components/_nanobar.scss","../../scss/components/_text.scss","../../node_modules/bootstrap/scss/_variables.scss","../../scss/components/_navbar.scss","../../node_modules/sidebar-skeleton-compostrap/scss/utils/_functions.scss","../../node_modules/sidebar-menu-compostrap/scss/utils/_variables.scss","../../node_modules/bootstrap/scss/vendor/_rfs.scss","../../scss/layout/_content.scss","../../node_modules/bootstrap/scss/mixins/_border-radius.scss"],
-"names": [],
-"file": "dashbaord.css"
-}

@@ -1,14 +1,23 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simple and fast dashboard skeleton on Bootstrap 4",
   "main": "Gruntfile.js",
   "dependencies": {
     "sidebar-menu-compostrap": "^1.0.21"
   },
   "devDependencies": {
-    "grunt": "^1.3.0",
-    "grunt-contrib-sass": "^2.0.0"
+    "serve": "^11.3.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "clean-css-cli": "^4.2.3"
+  },
+  "scripts": {
+    "build": "npm run scss && npm run css-minify",
+    "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss -o dist/css/",
+    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/dashboard.min.css dist/css/dashboard.css",
+    "watch": "nodemon -e scss -x \"npm run scss\"",
+    "server": "serve --listen 3000"
   },
   "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
   "license": "MIT",
