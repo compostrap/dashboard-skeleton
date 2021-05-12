@@ -1,21 +1,21 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Simple and fast dashboard skeleton on Bootstrap 4",
   "main": "Gruntfile.js",
   "dependencies": {
-    "sidebar-menu-compostrap": "^1.0.21"
+    "sidebar-menu-compostrap": "^1.0.23"
   },
   "devDependencies": {
     "serve": "^11.3.2",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "clean-css-cli": "^4.2.3"
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "clean-css-cli": "^5.3.0"
   },
   "scripts": {
     "build": "npm run scss && npm run css-minify",
     "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss -o dist/css/",
-    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/dashboard.min.css dist/css/dashboard.css",
+    "css-minify": "cleancss -O1 --source-map --source-map-inline-sources --output dist/css/dashboard.min.css dist/css/dashboard.css",
     "watch": "nodemon -e scss -x \"npm run scss\"",
     "server": "serve --listen 3000"
   },
