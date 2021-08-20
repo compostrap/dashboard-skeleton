@@ -1,8 +1,7 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple and fast dashboard skeleton on Bootstrap",
-  "main": "Gruntfile.js",
   "dependencies": {
     "sidebar-menu-compostrap": "^2.0.2"
   },
@@ -26,6 +25,8 @@
     "admin",
     "bootstrap"
   ],
+  "style": "dist/css/dashboard.css",
+  "sass": "scss/dashboard.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/compostrap/dashboard-skeleton.git"
