@@ -17,7 +17,7 @@
 }
 
 .text-pink {
-  color: #e83e8c;
+  color: #d63384;
 }
 
 .text-orange {
@@ -42,7 +42,7 @@
   content: "\f715";
   position: absolute;
   top: 1.25rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   opacity: 0.2;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .content-box .content-font-size {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=dashboard.css.map */
