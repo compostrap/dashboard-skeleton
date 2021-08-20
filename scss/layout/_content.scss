@@ -7,6 +7,6 @@
   @include border-radius($border-radius);
 
   .content-font-size {
-    @include font-size($font-size);
+    @include font-size($font-size-base);
   }
 }

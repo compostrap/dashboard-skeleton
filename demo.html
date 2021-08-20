@@ -19,26 +19,28 @@
 
 <header>
 	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<div class="container-fluid">
 
-		<!-- title -->
-		<a class="navbar-brand" href="#"><i class="fas fa-mug-hot mr-1 text-purple"></i>
-			<span class="text-purple text-bolder">Dashboard</span>
-		</a>
+			<!-- title -->
+			<a class="navbar-brand" href="#"><i class="fas fa-mug-hot px-1 text-purple"></i>
+				<span class="text-purple text-bolder">Dashboard</span>
+			</a>
 
-		<!-- sidebar toggle -->
-		<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+			<!-- sidebar toggle -->
+			<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<!-- navbar navigation -->
-		<div class="collapse navbar-collapse">
+			<!-- navbar navigation -->
+			<div class="collapse navbar-collapse">
 
-			<!-- breadcrumb -->
-			<ul class="navbar-nav navbar-nav-breadcrumb">
-				<li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
-				<li class="nav-item"><a class="nav-link disabled" href="#">Translate</a></li>
-			</ul>
+				<!-- breadcrumb -->
+				<ul class="navbar-nav navbar-nav-breadcrumb">
+					<li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+					<li class="nav-item"><a class="nav-link disabled" href="#">Translate</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 </header>
@@ -158,10 +160,10 @@
 								<li>
 									<a href="#" class="list-link">
 										<div class="clearfix">
-											<div class="float-left"><span class="list-icon"><i class="far fa-bell"></i></span>Messages</div>
-											<div class="float-right">
-												<span class="badge badge-dark">New</span>
-												<span class="badge badge-secondary">4</span>
+											<div class="float-start"><span class="list-icon"><i class="far fa-bell"></i></span>Messages</div>
+											<div class="float-end">
+												<span class="badge bg-dark">New</span>
+												<span class="badge bg-secondary">4</span>
 											</div>
 										</div>
 									</a>
@@ -220,7 +222,7 @@
 		</main>
 
 		<!-- license rights, do not delete this piece of code -->
-		<footer class="text-right mt-3 mr-3 mb-3">
+		<footer class="text-end mt-3 mb-3">
 			<p class="text-silver">Code licensed
 				<a href="https://github.com/compostrap/dashboard-skeleton/blob/master/license.md" class="text-muted" target="_blank" rel="license noopener">MIT</a>
 			</p>

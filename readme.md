@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">Compostrap</h3>
-<p align="center">Simple and fast components build on Bootstrap 4</p>
+<p align="center">Simple and fast components build on Bootstrap</p>
 
 ## Dashboard skeleton
 Simple and fast dashboard skeleton template.
@@ -18,8 +18,11 @@ Simple and fast dashboard skeleton template.
 npm install --save dashboard-skeleton-compostrap
 ```
 
+Version 1x built on Bootstrap 4  
+Version 2x built on Bootstrap 5
+
 ## Built on
-- [Bootstrap 4](https://getbootstrap.com)
+- [Bootstrap](https://getbootstrap.com)
 - [jQuery](https://jquery.com)
 - [Font Awesome 5](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
@@ -42,12 +45,12 @@ The basic skeleton consists of these components.
 ## Dashboard extension
 Added some classes for text.
 
-| Color                                                               | Class         |
-| ------------------------------------------------------------------- | ------------- |
-| ![#6f42c1](https://placehold.it/15/6f42c1/000000?text=+) `#6f42c1`  | `text-purple` |
-| ![#e83e8c](https://placehold.it/15/e83e8c/000000?text=+) `#e83e8c`  | `text-pink`   |
-| ![#fd7e14](https://placehold.it/15/fd7e14/000000?text=+) `#fd7e14`  | `text-orange` |
-| ![#20c997](https://placehold.it/15/20c997/000000?text=+) `#20c997`  | `text-teal`   |
+| Color                                                           | Class         |
+| --------------------------------------------------------------- | ------------- |
+| ![#6f42c1](https://via.placeholder.com/15/6f42c1/000000?text=+) | `text-purple` |
+| ![#e83e8c](https://via.placeholder.com/15/e83e8c/000000?text=+) | `text-pink`   |
+| ![#fd7e14](https://via.placeholder.com/15/fd7e14/000000?text=+) | `text-orange` |
+| ![#20c997](https://via.placeholder.com/15/20c997/000000?text=+) | `text-teal`   |
 
 | Description | class          |
 | ----------- | -------------- |
