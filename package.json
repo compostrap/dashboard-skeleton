@@ -1,9 +1,9 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Simple and fast dashboard skeleton on Bootstrap",
   "dependencies": {
-    "sidebar-menu-compostrap": "^2.0.6"
+    "sidebar-menu-compostrap": "^2.0.8"
   },
   "devDependencies": {
     "serve": "^13.0.2",
