@@ -1,15 +1,15 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Simple and fast dashboard skeleton on Bootstrap",
   "dependencies": {
-    "sidebar-menu-compostrap": "^2.0.4"
+    "sidebar-menu-compostrap": "^2.0.6"
   },
   "devDependencies": {
-    "serve": "^12.0.0",
-    "sass": "^1.38.0",
-    "nodemon": "^2.0.12",
-    "clean-css-cli": "^5.3.3"
+    "serve": "^13.0.2",
+    "sass": "^1.49.9",
+    "nodemon": "^2.0.15",
+    "clean-css-cli": "^5.5.2"
   },
   "scripts": {
     "build": "npm run scss && npm run css-minify",

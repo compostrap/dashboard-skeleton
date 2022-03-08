@@ -33,7 +33,7 @@
 }
 .navbar-nav-breadcrumb li + li:before {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
   content: "\f715";
   position: absolute;
   top: 1.25rem;
@@ -44,9 +44,6 @@
 .content-box {
   padding: 1.25rem;
   border-radius: 0.25rem;
-}
-.content-box .content-font-size {
-  font-size: 1rem;
 }
 
 /*# sourceMappingURL=dashboard.css.map */

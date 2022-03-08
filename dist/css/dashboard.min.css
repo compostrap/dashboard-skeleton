@@ -2,4 +2,4 @@
  * Dashboard skeleton
  * Copyright Zdeněk Papučík
  * MIT License
-*/.nanobar .bar{background-color:#d2d2d2}.text-silver{color:#adb5bd}.text-purple{color:#6f42c1}.text-pink{color:#d63384}.text-orange{color:#fd7e14}.text-teal{color:#20c997}.text-bolder{font-weight:600}.navbar-nav-breadcrumb .nav-link{margin-left:1.25rem}.navbar-nav-breadcrumb li+li:before{font-family:"Font Awesome 5 Free";font-weight:900;content:"\f715";position:absolute;top:1.25rem;font-size:.875rem;opacity:.2}.content-box{padding:1.25rem;border-radius:.25rem}.content-box .content-font-size{font-size:1rem}
+*/.nanobar .bar{background-color:#d2d2d2}.text-silver{color:#adb5bd}.text-purple{color:#6f42c1}.text-pink{color:#d63384}.text-orange{color:#fd7e14}.text-teal{color:#20c997}.text-bolder{font-weight:600}.navbar-nav-breadcrumb .nav-link{margin-left:1.25rem}.navbar-nav-breadcrumb li+li:before{font-family:"Font Awesome 5 Free";font-weight:600;content:"\f715";position:absolute;top:1.25rem;font-size:.875rem;opacity:.2}.content-box{padding:1.25rem;border-radius:.25rem}
