@@ -29,12 +29,13 @@
 }
 
 .navbar-nav-breadcrumb .nav-link {
-  margin-left: 1.25rem;
+  margin-right: 0.125rem;
+  margin-left: 0.5rem;
 }
 .navbar-nav-breadcrumb li + li:before {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 600;
-  content: "\f715";
+  content: "\f105";
   position: absolute;
   top: 1.25rem;
   font-size: 0.875rem;

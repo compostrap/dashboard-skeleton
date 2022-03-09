@@ -4,13 +4,14 @@
 
 .navbar-nav-breadcrumb {
   .nav-link {
-    margin-left: rem(20);
+    margin-right: rem(2);
+    margin-left: rem(8);
   }
 
   li+li:before {
     font-family: $font-awesome;
     font-weight: 600;
-    content: "\f715";
+    content: "\f105";
     position: absolute;
     top: rem(20);
     @include font-size($font-size-sm);
