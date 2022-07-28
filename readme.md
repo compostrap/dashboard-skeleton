@@ -38,12 +38,12 @@ The basic skeleton consists of these components.
 ## Dashboard extension
 Added some classes for text.
 
-| Color                                                           | Class         |
-| --------------------------------------------------------------- | ------------- |
-| ![#6f42c1](https://via.placeholder.com/15/6f42c1/000000?text=+) | `text-purple` |
-| ![#e83e8c](https://via.placeholder.com/15/e83e8c/000000?text=+) | `text-pink`   |
-| ![#fd7e14](https://via.placeholder.com/15/fd7e14/000000?text=+) | `text-orange` |
-| ![#20c997](https://via.placeholder.com/15/20c997/000000?text=+) | `text-teal`   |
+| Color                                                        | Class         |
+| ------------------------------------------------------------ | ------------- |
+| ![#6f42c1](https://via.placeholder.com/15/6f42c1/6f42c1.png) | `text-purple` |
+| ![#e83e8c](https://via.placeholder.com/15/e83e8c/e83e8c.png) | `text-pink`   |
+| ![#fd7e14](https://via.placeholder.com/15/fd7e14/fd7e14.png) | `text-orange` |
+| ![#20c997]https://via.placeholder.com/15/20c997/20c997.png)  | `text-teal`   |
 
 | Description | class          |
 | ----------- | -------------- |
