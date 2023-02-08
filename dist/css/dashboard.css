@@ -24,10 +24,6 @@
   color: #20c997;
 }
 
-.text-bolder {
-  font-weight: 600;
-}
-
 .navbar-nav-breadcrumb .nav-link {
   margin-right: 0.125rem;
   margin-left: 0.5rem;
@@ -44,7 +40,7 @@
 
 .content-box {
   padding: 1.25rem;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
 }
 
 /*# sourceMappingURL=dashboard.css.map */

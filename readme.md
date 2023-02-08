@@ -17,7 +17,7 @@ Version 2x built on Bootstrap 5
 ## Built on
 - [Bootstrap](https://getbootstrap.com)
 - [jQuery](https://jquery.com)
-- [Font Awesome 5](https://fontawesome.com)
+- [Font Awesome 6](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Open Sans @font-face kit](https://github.com/FontFaceKit/open-sans)
 - [Nanobar](https://github.com/jacoborus/nanobar)
@@ -26,7 +26,7 @@ Version 2x built on Bootstrap 5
 https://compostrap.github.io/dashboard.skeleton
 
 ## Introduction
-Simple and fast dashbaord skeleton is build on Bootstrap. So you should be aware of how Bootstrap itself is used.
+Simple and fast dashboard skeleton is build on Bootstrap. So you should be aware of how Bootstrap itself is used.
 The advantage is also knowledge of sass, npm, grunt.
 
 ## Dashboard skeleton
@@ -44,8 +44,3 @@ Added some classes for text.
 | ![#e83e8c](https://via.placeholder.com/15/e83e8c/e83e8c.png) | `text-pink`   |
 | ![#fd7e14](https://via.placeholder.com/15/fd7e14/fd7e14.png) | `text-orange` |
 | ![#20c997](https://via.placeholder.com/15/20c997/20c997.png) | `text-teal`   |
-
-| Description | class          |
-| ----------- | -------------- |
-| Fatty text  | `text-bolder` |
-
