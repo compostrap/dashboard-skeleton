@@ -4,8 +4,8 @@
 
 .navbar-nav-breadcrumb {
   .nav-link {
-    margin-right: rem(2);
-    margin-left: rem(8);
+    margin-right: toRem(2);
+    margin-left: toRem(8);
   }
 
   li+li:before {
@@ -13,7 +13,7 @@
     font-weight: 600;
     content: "\f105";
     position: absolute;
-    top: rem(20);
+    top: toRem(20);
     @include font-size($font-size-sm);
     opacity: 0.2;
   }

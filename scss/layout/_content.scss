@@ -3,6 +3,6 @@
 //
 
 .content-box {
-  padding: rem(20);
+  padding: toRem(20);
   @include border-radius($border-radius);
 }
