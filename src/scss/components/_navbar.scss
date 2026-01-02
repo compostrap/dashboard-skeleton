@@ -1,0 +1,25 @@
+//
+// navbar component
+//
+
+@use "sidebar-menu-compostrap/src/scss/utils/variables" as var;
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.navbar-nav-breadcrumb {
+  .nav-link {
+    margin-right: .125rem;
+    margin-left: .5rem;
+  }
+
+  li+li:before {
+    font-family: var.$font-awesome;
+    font-weight: 600;
+    content: "\f105";
+    position: absolute;
+    top: 1.25rem;
+    @include font-size($font-size-sm);
+    opacity: 0.2;
+  }
+}

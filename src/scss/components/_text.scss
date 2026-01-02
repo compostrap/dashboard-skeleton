@@ -2,6 +2,9 @@
 // text component
 //
 
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
 .text {
   &-silver {
     color: $gray-500;

@@ -1,38 +1,29 @@
 {
   "name": "dashboard-skeleton-compostrap",
-  "version": "2.0.8",
+  "version": "2.0.10",
   "description": "Simple and fast dashboard skeleton on Bootstrap",
   "dependencies": {
-    "sidebar-menu-compostrap": "^2.0.12"
+    "sidebar-menu-compostrap": "^2.0.16",
+    "nanobar": "^0.4.2",
+    "perfect-scrollbar": "^1.5.6"
   },
-  "devDependencies": {
-    "serve": "^14.2.0",
-    "sass": "^1.65.1",
-    "nodemon": "^3.0.1",
-    "clean-css-cli": "^5.6.2"
-  },
-  "scripts": {
-    "build": "npm run scss && npm run css-minify",
-    "scss": "sass -I node_modules scss/dashboard.scss dist/css/dashboard.css",
-    "css-minify": "cleancss -O1 --output dist/css/dashboard.min.css dist/css/dashboard.css",
-    "watch": "nodemon -e scss -x \"npm run scss\"",
-    "server": "serve --listen 3000"
-  },
-  "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "dashboard",
-    "admin",
+    "sidebar",
+    "menu",
     "bootstrap"
   ],
-  "style": "dist/css/dashboard.css",
-  "sass": "scss/dashboard.scss",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/compostrap/dashboard-skeleton.git"
+  "style": "dist/dashboard.css",
+  "sass": "src/scss/dashboard.scss",
+  "devDependencies": {
+    "sass": "^1.97.1",
+    "vite": "^7.3.0"
   },
-  "bugs": {
-    "url": "https://github.com/compostrap/dashboard-skeleton/issues"
+  "peerDependencies": {
+    "bootstrap": "^5.3.0"
   },
-  "homepage": "https://github.com/compostrap/dashboard-skeleton#readme"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
 }

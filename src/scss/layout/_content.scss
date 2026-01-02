@@ -1,0 +1,12 @@
+//
+// dashboard content layout
+//
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+.content-box {
+  padding: 1.25rem;
+  @include border-radius($border-radius);
+}

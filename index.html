@@ -5,11 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css">
+	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/sidebar.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 	<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/css/sidebar.menu.css">
-	<link rel="stylesheet" href="dist/css/dashboard.css">
+	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/sidebar.menu.css">
+	<link rel="stylesheet" href="dist/dashboard.css">
 	<title>Dashboard</title>
 
 </head>
@@ -235,11 +235,12 @@
 
 <!-- javascript library -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<script src="node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.js"></script>
+<script src="node_modules/sidebar-skeleton-compostrap/dist/sidebar.js"></script>
 <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="node_modules/nanobar/nanobar.js"></script>
-<script src="node_modules/sidebar-menu-compostrap/dist/js/sidebar.menu.js"></script>
-<script>
+<script src="node_modules/sidebar-menu-compostrap/dist/sidebar.menu.js"></script>
+<script type="module">
+	import PerfectScrollbar from "perfect-scrollbar";
 	document.addEventListener('DOMContentLoaded', () => {
 		new Nanobar().go(100);
 		new PerfectScrollbar('.scrollbar', {
