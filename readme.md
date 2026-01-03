@@ -3,7 +3,7 @@ Simple and fast dashboard skeleton template.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/compostrap/dashboard-skeleton-compostrap/blob/master/license)
 [![npm version](https://badge.fury.io/js/dashboard-skeleton-compostrap.svg)](https://badge.fury.io/js/dashboard-skeleton-compostrap)
-[![Build status](https://github.com/compostrap/dashboard-skeleton-compostrap/actions/workflows/build.yml/badge.svg)](https://github.com/compostrap/dashboard-skeleton-compostrap/actions/workflows/build.yml)
+[![Build status](https://github.com/compostrap/dashboard-skeleton/actions/workflows/build.yml/badge.svg)](https://github.com/compostrap/dashboard-skeleton/actions/workflows/build.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/compostrap/dashboard-skeleton/badge)](https://www.codefactor.io/repository/github/compostrap/dashboard-skeleton)
 
 ## Installation
