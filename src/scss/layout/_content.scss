@@ -8,5 +8,5 @@
 
 .content-box {
   padding: 1.25rem;
-  @include border-radius($border-radius);
+  border-radius: var(--bs-border-radius);
 }

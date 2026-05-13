@@ -3,19 +3,19 @@
 }
 
 .text-silver {
-  color: #adb5bd;
+  color: var(--bs-gray-500);
 }
 .text-purple {
-  color: #6f42c1;
+  color: var(--bs-purple);
 }
 .text-pink {
-  color: #d63384;
+  color: var(--bs-pink);
 }
 .text-orange {
-  color: #fd7e14;
+  color: var(--bs-orange);
 }
 .text-teal {
-  color: #20c997;
+  color: var(--bs-teal);
 }
 
 .navbar-nav-breadcrumb .nav-link {
@@ -34,5 +34,5 @@
 
 .content-box {
   padding: 1.25rem;
-  border-radius: 0.375rem;
+  border-radius: var(--bs-border-radius);
 }

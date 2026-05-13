@@ -7,22 +7,22 @@
 
 .text {
   &-silver {
-    color: $gray-500;
+    color: var(--bs-gray-500);
   }
 
   &-purple {
-    color: $purple;
+    color: var(--bs-purple);
   }
 
   &-pink {
-    color: $pink;
+    color: var(--bs-pink);
   }
 
   &-orange {
-    color: $orange;
+    color: var(--bs-orange);
   }
 
   &-teal {
-    color: $teal;
+    color: var(--bs-teal);
   }
 }
