@@ -2,22 +2,6 @@
   background-color: #d2d2d2;
 }
 
-.text-silver {
-  color: var(--bs-gray-500);
-}
-.text-purple {
-  color: var(--bs-purple);
-}
-.text-pink {
-  color: var(--bs-pink);
-}
-.text-orange {
-  color: var(--bs-orange);
-}
-.text-teal {
-  color: var(--bs-teal);
-}
-
 .navbar-nav-breadcrumb .nav-link {
   margin-right: 0.125rem;
   margin-left: 0.5rem;

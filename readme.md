@@ -1,13 +1,12 @@
 ## Dashboard skeleton
-Simple and fast dashboard skeleton template.
+Simple and fast dashboard skeleton template combining a responsive sidebar and a multi-level menu.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/compostrap/dashboard-skeleton-compostrap/blob/master/license)
 [![npm version](https://badge.fury.io/js/dashboard-skeleton-compostrap.svg)](https://badge.fury.io/js/dashboard-skeleton-compostrap)
 [![Build status](https://github.com/compostrap/dashboard-skeleton/actions/workflows/build.yml/badge.svg)](https://github.com/compostrap/dashboard-skeleton/actions/workflows/build.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/compostrap/dashboard-skeleton/badge)](https://www.codefactor.io/repository/github/compostrap/dashboard-skeleton)
 
 ## Installation
-```
+```bash
 npm install dashboard-skeleton-compostrap
 ```
 
@@ -18,24 +17,20 @@ npm install dashboard-skeleton-compostrap
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
 ## Demo
-https://compostrap.github.io/dashboard.skeleton
+- [Live demo](https://compostrap.github.io/dashboard-skeleton)
 
-## Introduction
-Simple and fast dashboard skeleton is build on Bootstrap. So you should be aware of how Bootstrap itself is used.
-The advantage is also knowledge of sass, npm, grunt.
+## Components
+The dashboard is built by integrating these core components:
+- [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton) - The structural layout and theme management.
+- [Sidebar menu](https://github.com/compostrap/sidebar-menu) - The multi-level navigation logic.
 
-## Dashboard skeleton
-The basic skeleton consists of these components.
+## Sidebar themes
+The dashboard natively supports **Light** and **Dark** themes. The theme state is automatically persisted in `localStorage`.
 
-- [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton)
-- [Sidebar menu](https://github.com/compostrap/sidebar-menu)
+| Theme | Attribute                    |
+|-------|------------------------------|
+| Light | `data-sidebar-theme="light"` |
+| Dark  | `data-sidebar-theme="dark"`  |
 
-## Dashboard extension
-Added some classes for text.
-
-| Color                                                    | Class       |
-|----------------------------------------------------------|-------------|
-| ![#6f42c1](https://placehold.co/15x15/6f42c1/6f42c1.png) | text-purple |
-| ![#e83e8c](https://placehold.co/15x15/e83e8c/e83e8c.png) | text-pink   |
-| ![#fd7e14](https://placehold.co/15x15/fd7e14/fd7e14.png) | text-orange |
-| ![#20c997](https://placehold.co/15x15/20c997/20c997.png) | text-teal   |
+## Advanced Customization
+For modern visual enhancements like tinted menu backgrounds, custom icon colors, and refined alignment, we highly recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

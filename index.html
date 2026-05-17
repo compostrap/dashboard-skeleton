@@ -8,27 +8,23 @@
 	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/sidebar.css">
 	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 	<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/sidebar.menu.css">
+	<link rel="stylesheet" href="node_modules/sidebar-menu-compostrap/dist/sidebar-menu.css">
+	<link rel="stylesheet" href="node_modules/sidebar-menu-2-compostrap/dist/sidebar-custom.css">
 	<link rel="stylesheet" href="dist/dashboard.css">
 	<title>Dashboard</title>
 
 </head>
 
-<body class="bg-light">
+<body>
 
 <header>
 	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 		<div class="container-fluid">
 
 			<!-- title -->
-			<a class="navbar-brand" href="#"><i class="fa-solid fa-mug-hot px-1 text-purple"></i>
-				<span class="text-purple fw-semibold">Dashboard</span>
+			<a class="navbar-brand" href="#"><i class="fa-solid fa-mug-hot px-1 text-primary"></i>
+				<span class="text-primary fw-semibold">Dashboard</span>
 			</a>
-
-			<!-- sidebar toggle -->
-			<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 
 			<!-- navbar navigation -->
 			<div class="collapse navbar-collapse">
@@ -40,12 +36,25 @@
 					<li class="nav-item"><a class="nav-link disabled" href="#">Translate</a></li>
 				</ul>
 			</div>
+
+			<div class="ms-auto d-flex align-items-center">
+
+				<!-- theme toggle -->
+				<button class="btn btn-link nav-link py-2 px-0 px-lg-2 border-0" id="theme-toggle" type="button" aria-label="Toggle theme">
+					Switch to light
+				</button>
+
+				<!-- sidebar toggle -->
+				<button class="navbar-toggler btn btn-link border-0 ms-2" type="button" id="sidebar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
 		</div>
 	</nav>
 </header>
 
 <div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
-	<nav role="navigation" class="sidebar sidebar-bg-white sidebar-rounded-top-right shadow-sm" id="navigation">
+	<nav role="navigation" class="sidebar sidebar-rounded-top-right shadow-soft" data-sidebar-theme="light" id="navigation">
 
 		<!-- sidebar -->
 		<div class="sidebar-menu">
@@ -54,10 +63,10 @@
 			<div class="sidebar-menu-fixed">
 
 				<!-- menu scrollbar -->
-				<div class="scrollbar scrollbar-use-navbar scrollbar-bg-white">
+				<div class="scrollbar scrollbar-use-navbar">
 
 					<!-- menu -->
-					<ul class="list list-unstyled list-bg-white mb-0">
+					<ul class="list list-unstyled mb-0">
 
 						<li class="list-item">
 
@@ -66,12 +75,12 @@
 
 							<!-- list items, first level -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link link-arrow text-uppercase">
-									<span class="list-icon"><i class="fa-regular fa-user bell"></i></span>S. Karlos</a>
+								<li><a href="#" class="list-link link-arrow">
+									<span class="list-icon"><i class="fa-regular fa-user bell"></i></span>S. Carlos</a>
 
 									<!-- list items, second level -->
 									<ul class="list-unstyled list-hidden">
-										<li><a href="#" class="list-link">Your profil</a></li>
+										<li><a href="#" class="list-link">Your profile</a></li>
 										<li><a href="#" class="list-link">Logout</a></li>
 									</ul>
 								</li>
@@ -80,7 +89,7 @@
 					</ul>
 
 					<!-- menu -->
-					<ul class="list list-unstyled list-bg-white list-icon-purple mb-0">
+					<ul class="list list-unstyled mb-0">
 
 						<!-- multi-level dropdown menu -->
 						<li class="list-item">
@@ -165,7 +174,7 @@
 										<div class="clearfix">
 											<div class="float-start"><span class="list-icon"><i class="fa-regular fa-bell bell"></i></span>Messages</div>
 											<div class="float-end">
-												<span class="badge bg-danger">New</span>
+												<span class="badge bg-primary">New</span>
 												<span class="badge bg-secondary">4</span>
 											</div>
 										</div>
@@ -198,7 +207,7 @@
 		<main role="main">
 
 			<!-- full box -->
-			<div class="content-box mb-3 bg-white shadow-sm">
+			<div class="content-box mb-3 bg-white shadow-soft">
 				<h5>Full content</h5>
 				<p>Here is content this website page.</p>
 			</div>
@@ -208,7 +217,7 @@
 
 				<!-- six box -->
 				<div class="mb-3 col-xl-6">
-					<div class="content-box bg-white shadow-sm">
+					<div class="content-box bg-white shadow-soft">
 						<h5>50% content</h5>
 						<p>Here is content this website page.</p>
 					</div>
@@ -216,7 +225,7 @@
 
 				<!-- six box -->
 				<div class="mb-3 col-xl-6">
-					<div class="content-box bg-white shadow-sm">
+					<div class="content-box bg-white shadow-soft">
 						<h5>50% content</h5>
 						<p>Here is content this website page.</p>
 					</div>
@@ -236,9 +245,10 @@
 <!-- javascript library -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/sidebar-skeleton-compostrap/dist/sidebar.js"></script>
+<script src="node_modules/sidebar-skeleton-compostrap/dist/theme-switcher.js"></script>
+<script src="node_modules/sidebar-menu-compostrap/dist/sidebar.menu.js"></script>
 <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="node_modules/nanobar/nanobar.js"></script>
-<script src="node_modules/sidebar-menu-compostrap/dist/sidebar.menu.js"></script>
 <script type="module">
 	import PerfectScrollbar from "perfect-scrollbar";
 	document.addEventListener('DOMContentLoaded', () => {
