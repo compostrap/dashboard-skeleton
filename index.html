@@ -244,15 +244,24 @@
 
 <!-- javascript library -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<script src="node_modules/sidebar-skeleton-compostrap/dist/sidebar.js"></script>
-<script src="node_modules/sidebar-skeleton-compostrap/dist/theme-switcher.js"></script>
-<script src="node_modules/sidebar-menu-compostrap/dist/sidebar.menu.js"></script>
 <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="node_modules/nanobar/nanobar.js"></script>
 <script type="module">
+	import { SidebarSkeleton } from "./node_modules/sidebar-skeleton-compostrap/dist/index.js";
+	import { SidebarMenuApp } from "./node_modules/sidebar-menu-compostrap/dist/index.js";
 	import PerfectScrollbar from "perfect-scrollbar";
+
 	document.addEventListener('DOMContentLoaded', () => {
+		// Initialize Sidebar Skeleton (Sidebar + Theme Switcher)
+		SidebarSkeleton.init();
+
+		// Initialize Sidebar Menu
+		SidebarMenuApp.init();
+
+		// Initialize Nanobar
 		new Nanobar().go(100);
+
+		// Initialize PerfectScrollbar
 		new PerfectScrollbar('.scrollbar', {
 			wheelSpeed: 0.3
 		});

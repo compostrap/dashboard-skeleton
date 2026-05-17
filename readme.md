@@ -10,6 +10,22 @@ Simple and fast dashboard skeleton template combining a responsive sidebar and a
 npm install dashboard-skeleton-compostrap
 ```
 
+## JavaScript Initialization
+The dashboard requires initialization of its core components. Add the following to your main JavaScript file:
+
+```javascript
+import { SidebarSkeleton } from 'sidebar-skeleton-compostrap';
+import { SidebarMenuApp } from 'sidebar-menu-compostrap';
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Sidebar structure and Theme management
+    SidebarSkeleton.init();
+
+    // Initialize Multi-level Menu logic
+    SidebarMenuApp.init();
+});
+```
+
 ## Built on
 - [Bootstrap 5](https://getbootstrap.com)
 - [Font Awesome 7](https://fontawesome.com)
