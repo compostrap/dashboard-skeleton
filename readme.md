@@ -14,17 +14,23 @@ npm install dashboard-skeleton-compostrap
 The dashboard requires initialization of its core components. Add the following to your main JavaScript file:
 
 ```javascript
-import { SidebarSkeleton } from 'sidebar-skeleton-compostrap';
+import { Sidebar } from 'sidebar-skeleton-compostrap';
 import { SidebarMenuApp } from 'sidebar-menu-compostrap';
+import { DashboardSkeleton } from 'dashboard-skeleton-compostrap';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Sidebar structure and Theme management
-    SidebarSkeleton.init();
+    // Initialize Sidebar structure
+    Sidebar.init();
 
     // Initialize Multi-level Menu logic
     SidebarMenuApp.init();
+
+    // Initialize Dashboard theme management
+    DashboardSkeleton.init();
 });
 ```
+
+`DashboardSkeleton.init()` initializes dashboard theme management. It switches Bootstrap's global `data-bs-theme` and also synchronizes the sidebar by updating `data-sidebar-theme` on the sidebar element when it is present.
 
 ## Built on
 - [Bootstrap 5](https://getbootstrap.com)
@@ -40,13 +46,22 @@ The dashboard is built by integrating these core components:
 - [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton) - The structural layout and theme management.
 - [Sidebar menu](https://github.com/compostrap/sidebar-menu) - The multi-level navigation logic.
 
-## Sidebar themes
-The dashboard natively supports **Light** and **Dark** themes. The theme state is automatically persisted in `localStorage`.
+## Themes
+The dashboard supports Bootstrap **Light** and **Dark** themes through `data-bs-theme`.
 
-| Theme | Attribute                    |
-|-------|------------------------------|
-| Light | `data-sidebar-theme="light"` |
-| Dark  | `data-sidebar-theme="dark"`  |
+```html
+<html lang="en" data-bs-theme="light">
+```
+
+You can switch the value manually, with your own JavaScript, or by using the dashboard theme switcher. Bootstrap components such as inputs, tables, dropdowns, and cards follow the selected theme automatically.
+
+When used with the sidebar skeleton, the sidebar still uses its own attribute for sidebar and menu colors:
+
+```html
+<nav class="sidebar" data-sidebar-theme="light" id="navigation">
+```
+
+The dashboard is the composition layer: it changes the global Bootstrap theme for the whole page and keeps the sidebar packages in sync. The sidebar packages remain independent and continue to work with only `data-sidebar-theme` when used outside a dashboard.
 
 ## Advanced Customization
 For modern visual enhancements like tinted menu backgrounds, custom icon colors, and refined alignment, we highly recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

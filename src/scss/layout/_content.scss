@@ -8,5 +8,11 @@
 
 .content-box {
   padding: 1.25rem;
+  color: var(--bs-body-color);
+  background-color: var(--ds-content-bg);
   border-radius: var(--bs-border-radius);
+
+  &.bg-white {
+    background-color: var(--ds-content-bg) !important;
+  }
 }

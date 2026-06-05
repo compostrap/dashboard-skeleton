@@ -23,14 +23,21 @@ export default defineConfig({
 	build: {
 		outDir: 'dist',
 		emptyOutDir: true,
+		cssCodeSplit: false,
+		cssMinify: false,
 		lib: {
-			entry: path.resolve(__dirname, 'src/scss/dashboard.scss'),
+			entry: {
+				index: path.resolve(__dirname, 'src/index.js'),
+				'theme-switcher': path.resolve(__dirname, 'src/theme-switcher.js')
+			},
 			formats: ['es'],
 		},
-		cssMinify: false,
 		rollupOptions: {
 			output: {
-				assetFileNames: 'dashboard.[ext]'
+				entryFileNames: '[name].js',
+				assetFileNames: (assetInfo) => {
+					return assetInfo.name?.endsWith('.css') ? 'dashboard.css' : 'assets/[name].[ext]';
+				}
 			}
 		}
 	}

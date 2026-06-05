@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
 	<meta charset="UTF-8">
@@ -18,12 +18,12 @@
 <body>
 
 <header>
-	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+	<nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
 		<div class="container-fluid">
 
 			<!-- title -->
-			<a class="navbar-brand" href="#"><i class="fa-solid fa-mug-hot px-1 text-primary"></i>
-				<span class="text-primary fw-semibold">Dashboard</span>
+			<a class="navbar-brand" href="#"><i class="fa-solid fa-mug-hot text-primary pe-3"></i>
+				<span class="text-light">Dashboard</span>
 			</a>
 
 			<!-- navbar navigation -->
@@ -207,7 +207,7 @@
 		<main role="main">
 
 			<!-- full box -->
-			<div class="content-box mb-3 bg-white shadow-soft">
+			<div class="content-box mb-3 shadow-soft">
 				<h5>Full content</h5>
 				<p>Here is content this website page.</p>
 			</div>
@@ -217,7 +217,7 @@
 
 				<!-- six box -->
 				<div class="mb-3 col-xl-6">
-					<div class="content-box bg-white shadow-soft">
+					<div class="content-box shadow-soft">
 						<h5>50% content</h5>
 						<p>Here is content this website page.</p>
 					</div>
@@ -225,7 +225,7 @@
 
 				<!-- six box -->
 				<div class="mb-3 col-xl-6">
-					<div class="content-box bg-white shadow-soft">
+					<div class="content-box shadow-soft">
 						<h5>50% content</h5>
 						<p>Here is content this website page.</p>
 					</div>
@@ -247,16 +247,20 @@
 <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="node_modules/nanobar/nanobar.js"></script>
 <script type="module">
-	import { SidebarSkeleton } from "./node_modules/sidebar-skeleton-compostrap/dist/index.js";
+	import { Sidebar } from "./node_modules/sidebar-skeleton-compostrap/dist/index.js";
 	import { SidebarMenuApp } from "./node_modules/sidebar-menu-compostrap/dist/index.js";
+	import { DashboardSkeleton } from "./dist/index.js";
 	import PerfectScrollbar from "perfect-scrollbar";
 
 	document.addEventListener('DOMContentLoaded', () => {
-		// Initialize Sidebar Skeleton (Sidebar + Theme Switcher)
-		SidebarSkeleton.init();
+		// Initialize Sidebar structure
+		Sidebar.init();
 
 		// Initialize Sidebar Menu
 		SidebarMenuApp.init();
+
+		// Initialize Dashboard theme management
+		DashboardSkeleton.init();
 
 		// Initialize Nanobar
 		new Nanobar().go(100);

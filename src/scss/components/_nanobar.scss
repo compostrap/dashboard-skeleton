@@ -4,6 +4,6 @@
 
 .nanobar {
   & .bar {
-    background-color: #d2d2d2;
+    background-color: var(--ds-nanobar-bg);
   }
 }
