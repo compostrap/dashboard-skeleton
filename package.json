@@ -16,7 +16,6 @@
     "menu",
     "bootstrap"
   ],
-  "dashboard.css": "dist/dashboard.css",
   "exports": {
     ".": "./dist/index.js",
     "./theme-switcher": "./dist/theme-switcher.js",

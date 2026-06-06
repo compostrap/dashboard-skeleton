@@ -10,6 +10,16 @@ Simple and fast dashboard skeleton template combining a responsive sidebar and a
 npm install dashboard-skeleton-compostrap
 ```
 
+## Styles
+Load the dashboard styles after the sidebar packages, so the dashboard layer can finish the composed layout:
+
+```javascript
+import 'sidebar-skeleton-compostrap/sidebar.css';
+import 'sidebar-menu-compostrap/sidebar-menu.css';
+import 'sidebar-menu-2-compostrap/sidebar-custom.css';
+import 'dashboard-skeleton-compostrap/dashboard.css';
+```
+
 ## JavaScript Initialization
 The dashboard requires initialization of its core components. Add the following to your main JavaScript file:
 
