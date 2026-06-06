@@ -1,0 +1,25 @@
+//
+// dashboard theme
+//
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+:root,
+[data-bs-theme="light"] {
+  --ds-body-bg: #{$gray-100};
+  --ds-navbar-bg: var(--ds-body-bg);
+  --ds-content-bg: #{$white};
+  --ds-nanobar-bg: #{$gray-300};
+}
+
+[data-bs-theme="dark"] {
+  --ds-body-bg: #{$gray-900};
+  --ds-navbar-bg: var(--ds-body-bg);
+  --ds-content-bg: var(--bs-tertiary-bg);
+  --ds-nanobar-bg: #{$gray-600};
+}
+
+body {
+  background-color: var(--ds-body-bg);
+}
