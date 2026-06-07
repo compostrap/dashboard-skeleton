@@ -73,5 +73,22 @@ When used with the sidebar skeleton, the sidebar still uses its own attribute fo
 
 The dashboard is the composition layer: it changes the global Bootstrap theme for the whole page and keeps the sidebar packages in sync. The sidebar packages remain independent and continue to work with only `data-sidebar-theme` when used outside a dashboard.
 
+## Theme switch labels
+The dashboard theme switcher uses English labels by default. If your application handles translations in HTML templates, pass translated labels through `data-*` attributes:
+
+```html
+<button
+	id="theme-toggle"
+	type="button"
+	aria-label="Toggle theme"
+	data-theme-light-label="Switch to light"
+	data-theme-dark-label="Switch to dark"
+>
+	Switch to light
+</button>
+```
+
+The JavaScript reads those values and updates the button text when the theme changes. If the attributes are missing, the default English labels are used.
+
 ## Advanced Customization
 For modern visual enhancements like tinted menu backgrounds, custom icon colors, and refined alignment, we highly recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

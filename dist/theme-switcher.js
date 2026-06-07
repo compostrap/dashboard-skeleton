@@ -3,10 +3,10 @@ class c {
     const t = document.getElementById("theme-toggle"), e = document.documentElement;
     if (!t)
       return;
-    const a = document.getElementById("navigation"), i = "dashboard-theme", n = "data-bs-theme", s = localStorage.getItem(i) || e.getAttribute(n) || a?.getAttribute("data-sidebar-theme") || "light";
-    this._apply(e, a, s), this._render(t, s), t.addEventListener("click", (o) => {
-      o.preventDefault();
-      const r = e.getAttribute(n) === "light" ? "dark" : "light";
+    const a = document.getElementById("navigation"), i = "dashboard-theme", s = "data-bs-theme", n = localStorage.getItem(i) || e.getAttribute(s) || a?.getAttribute("data-sidebar-theme") || "light";
+    this._apply(e, a, n), this._render(t, n), t.addEventListener("click", (h) => {
+      h.preventDefault();
+      const r = e.getAttribute(s) === "light" ? "dark" : "light";
       this._apply(e, a, r), localStorage.setItem(i, r), this._render(t, r);
     });
   }
@@ -14,7 +14,7 @@ class c {
     t.setAttribute("data-bs-theme", a), e?.setAttribute("data-sidebar-theme", a);
   }
   static _render(t, e) {
-    t.innerText = e === "dark" ? "Switch to light" : "Switch to dark";
+    t.innerText = e === "dark" ? t.dataset.themeLightLabel || "Switch to light" : t.dataset.themeDarkLabel || "Switch to dark";
   }
 }
 export {
