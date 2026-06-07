@@ -7,19 +7,19 @@
 
 :root,
 [data-bs-theme="light"] {
-  --ds-body-bg: #{$gray-100};
-  --ds-navbar-bg: var(--ds-body-bg);
-  --ds-content-bg: #{$white};
-  --ds-nanobar-bg: #{$gray-300};
+	--ds-body-bg: #{$gray-100};
+	--ds-navbar-bg: var(--ds-body-bg);
+	--ds-content-bg: #{$white};
+	--ds-nanobar-bg: #{$gray-300};
 }
 
 [data-bs-theme="dark"] {
-  --ds-body-bg: #{$gray-900};
-  --ds-navbar-bg: var(--ds-body-bg);
-  --ds-content-bg: var(--bs-tertiary-bg);
-  --ds-nanobar-bg: #{$gray-600};
+	--ds-body-bg: #{$gray-900};
+	--ds-navbar-bg: var(--ds-body-bg);
+	--ds-content-bg: var(--bs-tertiary-bg);
+	--ds-nanobar-bg: #{$gray-600};
 }
 
 body {
-  background-color: var(--ds-body-bg);
+	background-color: var(--ds-body-bg);
 }
