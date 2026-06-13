@@ -27,8 +27,7 @@ export default defineConfig({
 		cssMinify: false,
 		lib: {
 			entry: {
-				index: path.resolve(__dirname, 'src/index.js'),
-				'theme-switcher': path.resolve(__dirname, 'src/theme-switcher.js')
+				index: path.resolve(__dirname, 'src/index.js')
 			},
 			formats: ['es'],
 		},

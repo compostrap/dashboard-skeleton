@@ -7,10 +7,6 @@
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 
-.navbar {
-  background-color: var(--ds-navbar-bg) !important;
-}
-
 .navbar-nav-breadcrumb {
   .nav-link {
 	margin-right: .125rem;

@@ -24,9 +24,8 @@ import 'dashboard-skeleton-compostrap/dashboard.css';
 The dashboard requires initialization of its core components. Add the following to your main JavaScript file:
 
 ```javascript
-import { Sidebar } from 'sidebar-skeleton-compostrap';
+import { Sidebar, ThemeSwitcher } from 'sidebar-skeleton-compostrap';
 import { SidebarMenuApp } from 'sidebar-menu-compostrap';
-import { DashboardSkeleton } from 'dashboard-skeleton-compostrap';
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Sidebar structure
@@ -35,12 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Multi-level Menu logic
     SidebarMenuApp.init();
 
-    // Initialize Dashboard theme management
-    DashboardSkeleton.init();
+    // Initialize global Bootstrap theme management
+    ThemeSwitcher.init();
 });
 ```
 
-`DashboardSkeleton.init()` initializes dashboard theme management. It switches Bootstrap's global `data-bs-theme` and also synchronizes the sidebar by updating `data-sidebar-theme` on the sidebar element when it is present.
+`ThemeSwitcher.init()` is provided by `sidebar-skeleton-compostrap` and switches Bootstrap's global `data-bs-theme`.
 
 ## Built on
 - [Bootstrap 5](https://getbootstrap.com)
@@ -63,18 +62,21 @@ The dashboard supports Bootstrap **Light** and **Dark** themes through `data-bs-
 <html lang="en" data-bs-theme="light">
 ```
 
-You can switch the value manually, with your own JavaScript, or by using the dashboard theme switcher. Bootstrap components such as inputs, tables, dropdowns, and cards follow the selected theme automatically.
+You can switch the value manually, with your own JavaScript, or by using the theme switcher from `sidebar-skeleton-compostrap`. Bootstrap components such as inputs, tables, dropdowns, and cards follow the selected theme automatically.
 
-When used with the sidebar skeleton, the sidebar still uses its own attribute for sidebar and menu colors:
+The dashboard keeps Bootstrap's natural surface colors:
 
-```html
-<nav class="sidebar" data-sidebar-theme="light" id="navigation">
-```
+| Theme | Page background            | Sidebar and content |
+|-------|----------------------------|---------------------|
+| Light | `var(--bs-tertiary-bg)`    | `var(--bs-body-bg)` |
+| Dark  | `var(--bs-dark-bg-subtle)` | `var(--bs-body-bg)` |
 
-The dashboard is the composition layer: it changes the global Bootstrap theme for the whole page and keeps the sidebar packages in sync. The sidebar packages remain independent and continue to work with only `data-sidebar-theme` when used outside a dashboard.
+This keeps form controls and other Bootstrap components visually aligned with the content surface without extra overrides.
+
+The dashboard is the composition layer: it changes the global Bootstrap theme for the whole page. Sidebar packages read the same `data-bs-theme`, so no additional sidebar theme attribute is needed.
 
 ## Theme switch labels
-The dashboard theme switcher uses English labels by default. If your application handles translations in HTML templates, pass translated labels through `data-*` attributes:
+The theme switcher uses English labels by default. If your application handles translations in HTML templates, pass translated labels through `data-*` attributes:
 
 ```html
 <button
