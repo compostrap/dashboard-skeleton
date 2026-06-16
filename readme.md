@@ -24,22 +24,24 @@ import 'dashboard-skeleton-compostrap/dashboard.css';
 The dashboard requires initialization of its core components. Add the following to your main JavaScript file:
 
 ```javascript
-import { Sidebar, ThemeSwitcher } from 'sidebar-skeleton-compostrap';
+import { Sidebar } from 'sidebar-skeleton-compostrap';
 import { SidebarMenuApp } from 'sidebar-menu-compostrap';
+import { ThemeSwitcher } from 'theme-switcher-compostrap';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize Sidebar structure
-    Sidebar.init();
+	// Initialize Sidebar structure
+	Sidebar.init();
 
-    // Initialize Multi-level Menu logic
-    SidebarMenuApp.init();
+	// Initialize Multi-level Menu logic
+	SidebarMenuApp.init();
 
-    // Initialize global Bootstrap theme management
-    ThemeSwitcher.init();
+	// Initialize global Bootstrap theme management
+	new ThemeSwitcher().initialize();
 });
 ```
 
-`ThemeSwitcher.init()` is provided by `sidebar-skeleton-compostrap` and switches Bootstrap's global `data-bs-theme`.
+`ThemeSwitcher` is provided by `theme-switcher-compostrap` and switches Bootstrap's global
+`data-bs-theme`.
 
 ## Built on
 - [Bootstrap 5](https://getbootstrap.com)
@@ -62,7 +64,9 @@ The dashboard supports Bootstrap **Light** and **Dark** themes through `data-bs-
 <html lang="en" data-bs-theme="light">
 ```
 
-You can switch the value manually, with your own JavaScript, or by using the theme switcher from `sidebar-skeleton-compostrap`. Bootstrap components such as inputs, tables, dropdowns, and cards follow the selected theme automatically.
+You can switch the value manually, with your own JavaScript, or by using the theme switcher from
+`theme-switcher-compostrap`. Bootstrap components such as inputs, tables, dropdowns, and cards follow the
+selected theme automatically.
 
 The dashboard keeps Bootstrap's natural surface colors:
 
@@ -80,17 +84,20 @@ The theme switcher uses English labels by default. If your application handles t
 
 ```html
 <button
-	id="theme-toggle"
 	type="button"
+	class="btn btn-link nav-link theme-switcher py-2 px-0 px-lg-2 border-0 text-decoration-none"
 	aria-label="Toggle theme"
-	data-theme-light-label="Switch to light"
-	data-theme-dark-label="Switch to dark"
+	data-theme-switcher
+	data-theme-light-label="Light mode"
+	data-theme-dark-label="Dark mode"
 >
-	Switch to light
+	<i data-theme-switcher-icon class="fa-solid fa-moon"></i>
+	<span data-theme-switcher-label>Dark mode</span>
 </button>
 ```
 
-The JavaScript reads those values and updates the button text when the theme changes. If the attributes are missing, the default English labels are used.
+The JavaScript reads those values and updates the icon and label when the theme changes. If the attributes
+are missing, the default English labels and Font Awesome icons are used.
 
 ## Advanced Customization
 For modern visual enhancements like tinted menu backgrounds, custom icon colors, and refined alignment, we highly recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

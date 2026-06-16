@@ -35,6 +35,31 @@ body {
   opacity: 0.2;
 }
 
+.custom-dropdown .dropdown-toggle,
+.theme-switcher.nav-link {
+  --bs-btn-color: var(--bs-navbar-color);
+  --bs-btn-hover-color: var(--bs-navbar-hover-color);
+  --bs-btn-active-color: var(--bs-navbar-hover-color);
+  color: var(--bs-navbar-color);
+}
+.custom-dropdown .dropdown-toggle:hover, .custom-dropdown .dropdown-toggle:focus, .custom-dropdown .dropdown-toggle:active, .custom-dropdown .dropdown-toggle.active, .custom-dropdown .dropdown-toggle:focus-visible,
+.theme-switcher.nav-link:hover,
+.theme-switcher.nav-link:focus,
+.theme-switcher.nav-link:active,
+.theme-switcher.nav-link.active,
+.theme-switcher.nav-link:focus-visible {
+  color: var(--bs-navbar-hover-color);
+  box-shadow: none;
+}
+
+.custom-dropdown .dropdown-item:active, .custom-dropdown .dropdown-item.active {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: var(--bs-dropdown-link-hover-bg);
+}
+.custom-dropdown .dropdown-item.current {
+  font-weight: 600;
+}
+
 .content-box {
   padding: 1.25rem;
   color: var(--bs-body-color);

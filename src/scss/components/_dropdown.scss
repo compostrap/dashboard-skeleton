@@ -1,0 +1,31 @@
+.custom-dropdown .dropdown-toggle,
+.theme-switcher.nav-link {
+	--bs-btn-color: var(--bs-navbar-color);
+	--bs-btn-hover-color: var(--bs-navbar-hover-color);
+	--bs-btn-active-color: var(--bs-navbar-hover-color);
+
+	color: var(--bs-navbar-color);
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active,
+	&:focus-visible {
+		color: var(--bs-navbar-hover-color);
+		box-shadow: none;
+	}
+}
+
+.custom-dropdown {
+	.dropdown-item {
+		&:active,
+		&.active {
+			color: var(--bs-dropdown-link-hover-color);
+			background-color: var(--bs-dropdown-link-hover-bg);
+		}
+
+		&.current {
+			font-weight: 600;
+		}
+	}
+}
