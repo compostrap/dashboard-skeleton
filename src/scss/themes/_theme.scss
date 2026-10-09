@@ -2,18 +2,18 @@
 // dashboard theme
 //
 
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
 
 :root,
-[data-bs-theme="light"] {
+[data-bs-theme='light'] {
 	--ds-body-bg: var(--bs-tertiary-bg);
 	--ds-surface-bg: var(--bs-body-bg);
 	--ds-content-bg: var(--ds-surface-bg);
 	--ds-nanobar-bg: #{$gray-300};
 }
 
-[data-bs-theme="dark"] {
+[data-bs-theme='dark'] {
 	--ds-body-bg: var(--bs-dark-bg-subtle);
 	--ds-surface-bg: var(--bs-body-bg);
 	--ds-content-bg: var(--ds-surface-bg);

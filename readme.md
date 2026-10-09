@@ -1,4 +1,5 @@
 ## Dashboard skeleton
+
 Simple and fast dashboard skeleton template combining a responsive sidebar and a multi-level menu.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/compostrap/dashboard-skeleton/blob/master/license)
@@ -6,11 +7,13 @@ Simple and fast dashboard skeleton template combining a responsive sidebar and a
 [![Build status](https://github.com/compostrap/dashboard-skeleton/actions/workflows/build.yml/badge.svg)](https://github.com/compostrap/dashboard-skeleton/actions/workflows/build.yml)
 
 ## Installation
+
 ```bash
 npm install dashboard-skeleton-compostrap
 ```
 
 ## Styles
+
 Load the dashboard styles after the sidebar packages, so the dashboard layer can finish the composed layout:
 
 ```javascript
@@ -21,6 +24,7 @@ import 'dashboard-skeleton-compostrap/dashboard.css';
 ```
 
 ## JavaScript Initialization
+
 The dashboard requires initialization of its core components. Add the following to your main JavaScript file:
 
 ```javascript
@@ -44,20 +48,25 @@ document.addEventListener('DOMContentLoaded', () => {
 `data-bs-theme`.
 
 ## Built on
+
 - [Bootstrap 5](https://getbootstrap.com)
 - [Font Awesome 7](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
 ## Demo
+
 - [Live demo](https://compostrap.github.io/dashboard-skeleton)
 
 ## Components
+
 The dashboard is built by integrating these core components:
+
 - [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton) - The structural layout and theme management.
 - [Sidebar menu](https://github.com/compostrap/sidebar-menu) - The multi-level navigation logic.
 
 ## Themes
+
 The dashboard supports Bootstrap **Light** and **Dark** themes through `data-bs-theme`.
 
 ```html
@@ -80,6 +89,7 @@ This keeps form controls and other Bootstrap components visually aligned with th
 The dashboard is the composition layer: it changes the global Bootstrap theme for the whole page. Sidebar packages read the same `data-bs-theme`, so no additional sidebar theme attribute is needed.
 
 ## Theme switch labels
+
 The theme switcher uses English labels by default. If your application handles translations in HTML templates, pass translated labels through `data-*` attributes:
 
 ```html
@@ -100,4 +110,5 @@ The JavaScript reads those values and updates the icon and label when the theme 
 are missing, the default English labels and Font Awesome icons are used.
 
 ## Advanced Customization
+
 For modern visual enhancements like tinted menu backgrounds, custom icon colors, and refined alignment, we highly recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.
