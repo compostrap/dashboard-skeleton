@@ -1,6 +1,6 @@
 {
 	"name": "dashboard-skeleton-compostrap",
-	"version": "3.0.3",
+	"version": "3.0.4",
 	"description": "Simple and fast dashboard skeleton on Bootstrap",
 	"type": "module",
 	"license": "MIT",
@@ -19,9 +19,10 @@
 		"sidebar-menu-2-compostrap": "^3.0.0",
 		"sidebar-menu-compostrap": "^3.0.0",
 		"sidebar-skeleton-compostrap": "^3.0.0",
-		"theme-switcher-compostrap": "^1.0.1"
+		"theme-switcher-compostrap": "^2.0.0"
 	},
 	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^7.1.0",
 		"sass": "^1.97.1",
 		"vite": "^8.0.16"
 	},

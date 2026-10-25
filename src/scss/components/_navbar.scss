@@ -7,6 +7,10 @@
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins';
 
+.navbar.fixed-top {
+	background-color: var(--ds-body-bg) !important;
+}
+
 .navbar-nav-breadcrumb {
 	.nav-link {
 	margin-right: .125rem;

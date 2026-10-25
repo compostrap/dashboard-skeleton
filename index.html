@@ -19,7 +19,7 @@
 <body>
 
 <header>
-	<nav class="navbar navbar-expand-md bg-body fixed-top">
+	<nav class="navbar navbar-expand-md fixed-top">
 		<div class="container-fluid">
 
 			<!-- title -->
@@ -53,13 +53,13 @@
 				</div>
 
 				<!-- theme toggle -->
-				<button type="button" class="btn btn-link nav-link theme-switcher text-decoration-none" data-theme-switcher>
+				<button type="button" class="btn btn-link nav-link theme-switcher text-decoration-none" data-theme-switcher data-theme-light-icon="fa-solid fa-sun" data-theme-dark-icon="fa-solid fa-moon">
 					<i data-theme-switcher-icon class="fa-solid fa-moon"></i>
 					<span data-theme-switcher-label>Dark mode</span>
 				</button>
 
 				<!-- sidebar toggle -->
-				<button class="navbar-toggler btn btn-link border-0 ms-2" type="button" id="sidebar" aria-label="Toggle navigation">
+				<button class="navbar-toggler btn btn-link border-0 ms-2" type="button" id="sidebar" aria-label="Toggle navigation" aria-controls="navigation" aria-expanded="false">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
@@ -274,7 +274,10 @@
 		SidebarMenuApp.init();
 
 		// Initialize global Bootstrap theme management
-		new ThemeSwitcher().initialize();
+		new ThemeSwitcher({
+			lightIcon: 'fa-solid fa-sun',
+			darkIcon: 'fa-solid fa-moon'
+		}).initialize();
 
 		// Initialize Nanobar
 		new Nanobar().go(100);

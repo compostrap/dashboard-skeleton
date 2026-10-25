@@ -98,6 +98,8 @@ The theme switcher uses English labels by default. If your application handles t
 	class="btn btn-link nav-link theme-switcher py-2 px-0 px-lg-2 border-0 text-decoration-none"
 	aria-label="Toggle theme"
 	data-theme-switcher
+	data-theme-light-icon="fa-solid fa-sun"
+	data-theme-dark-icon="fa-solid fa-moon"
 	data-theme-light-label="Light mode"
 	data-theme-dark-label="Dark mode"
 >
@@ -106,8 +108,8 @@ The theme switcher uses English labels by default. If your application handles t
 </button>
 ```
 
-The JavaScript reads those values and updates the icon and label when the theme changes. If the attributes
-are missing, the default English labels and Font Awesome icons are used.
+The JavaScript reads those values and updates the icon and label when the theme changes. Labels default to
+English. Icons are optional; provide both icon classes through `data-*` attributes or JavaScript options.
 
 ## Advanced Customization
 
