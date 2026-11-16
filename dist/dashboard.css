@@ -1,13 +1,13 @@
 :root,
 [data-bs-theme=light] {
-  --ds-body-bg: var(--bs-tertiary-bg);
+  --ds-body-bg: color-mix(in srgb, var(--bs-tertiary-bg) 98.4%, #000);
   --ds-surface-bg: var(--bs-body-bg);
   --ds-content-bg: var(--ds-surface-bg);
   --ds-nanobar-bg: #dee2e6;
 }
 
 [data-bs-theme=dark] {
-  --ds-body-bg: var(--bs-dark-bg-subtle);
+  --ds-body-bg: color-mix(in srgb, var(--bs-body-bg) 55%, #000);
   --ds-surface-bg: var(--bs-body-bg);
   --ds-content-bg: var(--ds-surface-bg);
   --ds-nanobar-bg: #6c757d;

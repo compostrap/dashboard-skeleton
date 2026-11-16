@@ -77,12 +77,12 @@ You can switch the value manually, with your own JavaScript, or by using the the
 `theme-switcher-compostrap`. Bootstrap components such as inputs, tables, dropdowns, and cards follow the
 selected theme automatically.
 
-The dashboard keeps Bootstrap's natural surface colors:
+The page background (`--ds-body-bg`) is a shade darker than the sidebar and the content boxes:
 
-| Theme | Page background            | Sidebar and content |
-|-------|----------------------------|---------------------|
-| Light | `var(--bs-tertiary-bg)`    | `var(--bs-body-bg)` |
-| Dark  | `var(--bs-dark-bg-subtle)` | `var(--bs-body-bg)` |
+| Theme | Page background                                         | Sidebar and content |
+|-------|---------------------------------------------------------|---------------------|
+| Light | `color-mix(in srgb, var(--bs-tertiary-bg) 98.4%, #000)` | `var(--bs-body-bg)` |
+| Dark  | `color-mix(in srgb, var(--bs-body-bg) 55%, #000)`       | `var(--bs-body-bg)` |
 
 This keeps form controls and other Bootstrap components visually aligned with the content surface without extra overrides.
 
@@ -113,4 +113,4 @@ English. Icons are optional; provide both icon classes through `data-*` attribut
 
 ## Advanced Customization
 
-For modern visual enhancements like tinted menu backgrounds, custom icon colors, and refined alignment, we highly recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.
+For menu links as pills (the current page and a hovered link in a pill of the page background color) use the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

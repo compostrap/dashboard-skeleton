@@ -7,14 +7,16 @@
 
 :root,
 [data-bs-theme='light'] {
-	--ds-body-bg: var(--bs-tertiary-bg);
+	// a shade darker than the tertiary background of Bootstrap, so the white sidebar and boxes stand out
+	--ds-body-bg: color-mix(in srgb, var(--bs-tertiary-bg) 98.4%, #000);
 	--ds-surface-bg: var(--bs-body-bg);
 	--ds-content-bg: var(--ds-surface-bg);
 	--ds-nanobar-bg: #{$gray-300};
 }
 
+// in the dark theme the page is darker than its surfaces (sidebar, boxes), the shadows are not seen there
 [data-bs-theme='dark'] {
-	--ds-body-bg: var(--bs-dark-bg-subtle);
+	--ds-body-bg: color-mix(in srgb, var(--bs-body-bg) 55%, #000);
 	--ds-surface-bg: var(--bs-body-bg);
 	--ds-content-bg: var(--ds-surface-bg);
 	--ds-nanobar-bg: #{$gray-600};
